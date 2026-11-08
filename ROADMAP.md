@@ -3,8 +3,9 @@
 ## Phase 0 — Requirements & contracts
 - [x] Создать репозиторий и базовую документацию.
 - [x] Зафиксировать производственные принципы и границы первой версии.
-- [ ] Утвердить JSON-модель Project / Scene / Shot / Asset / Timeline.
-- [ ] Подготовить JSON Schema и тестовые валидные/невалидные проекты.
+- [x] Зафиксировать двухфазный pipeline: keyframe approval → Image-to-Video → GIF → QC.
+- [ ] Утвердить YAML/JSON-модель Project / Scene / Character / Location / Asset / Timeline.
+- [ ] Подготовить схемы scene.yaml, character.yaml, location.yaml, manifest и тестовые валидные/невалидные проекты.
 - [ ] Определить профиль первого тестового мультфильма.
 
 ## Phase 1 — Technical spike
@@ -18,7 +19,7 @@
 - [ ] Реализовать CLI для создания и проверки проекта.
 - [ ] Реализовать Project Manager и Asset Manager.
 - [ ] Добавить реестр персонажей и локаций.
-- [ ] Реализовать Scene/Shot validation.
+- [ ] Реализовать Scene/Shot/Character/Location validation и блокировку переходов по state machine.
 - [ ] Добавить отчёт о недостающих/неподтверждённых ресурсах.
 
 ## Phase 3 — Timeline & rendering
@@ -30,9 +31,11 @@
 
 ## Phase 4 — Production workflow
 - [ ] Добавить генерацию производственных заданий и промптов.
-- [ ] Добавить импорт результатов генерации и регистрацию версий.
+- [ ] Добавить импорт результатов генерации, неизменяемые версии assets и audit trail.
+- [ ] Реализовать keyframe approval gate и Image-to-Video adapter.
 - [ ] Добавить ручной review/approval.
 - [ ] Добавить автоматические отчёты по сценам и готовности фильма.
+- [ ] Реализовать двухуровневый QC: машинные проверки + human review.
 
 ## Phase 5 — Usability & reliability
 - [ ] Добавить простой UI или интеграцию с существующим редактором, если CLI-процесс стабилен.
