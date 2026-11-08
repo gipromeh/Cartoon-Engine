@@ -16,7 +16,7 @@
 
 ## Текущий статус
 
-Проект находится на этапе определения архитектуры и спецификаций. Репозиторий содержит начальную документацию; исполняемый pipeline и конкретный renderer ещё не выбраны.
+Зафиксирована архитектура двухфазного производства: сначала утверждение ключевого кадра, затем Image-to-Video, GIF assembly и QC. Исполняемый pipeline и конкретный Image-to-Video backend ещё не реализованы/не выбраны.
 
 ## Документы
 
@@ -24,7 +24,9 @@
 - [Архитектура](ARCHITECTURE.md)
 - [Дорожная карта](ROADMAP.md)
 - [Лицензии и происхождение компонентов](LICENSES.md)
-- [Производственный pipeline](docs/pipeline/PRODUCTION_PIPELINE.md)
+- [Общий производственный pipeline](docs/pipeline/PRODUCTION_PIPELINE.md)
+- [Pipeline «История одного камня»](docs/pipeline/GRANITE_ANIMATION_PIPELINE.md)
+- [ADR 0001: двухфазное производство сцены](docs/adr/0001-two-phase-scene-production.md)
 - [Контракт персонажей](docs/characters/CHARACTER_BIBLE.md)
 - [Таймлайн и рендеринг](docs/rendering/TIMELINE_AND_RENDERING.md)
 
