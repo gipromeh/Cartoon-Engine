@@ -1,0 +1,45 @@
+schema_version: 1
+id: CHAR_TEACHER_01
+name: Учительница
+role: Учительница начальных классов
+age: около 55 лет
+design_status: APPROVED
+identity_lock: true
+
+reference:
+  version: "1.0"
+  status: APPROVED
+  file: REFERENCE/teacher_model_sheet_v1.0.png
+  selection: "Правая колонка модельного листа с заголовком «Учительница»"
+  authority: canonical
+  note: "Не использовать соседние колонки с главной героиней и мамой."
+
+appearance:
+  body: "Невысокая, заметно полная женщина; плотный короткий силуэт."
+  face: "Округлое, доброжелательное зрелое лицо."
+  hair: "Короткая светлая мягко-волнистая стрижка."
+  glasses: "Очки с тёмной оправой."
+  accessories:
+    - "Жемчужные серьги"
+    - "Небольшая брошь"
+  wardrobe:
+    - "Светлая кремовая блузка с бантом или мягким шарфом у горловины"
+    - "Сливово-бордовый жилетный комплект / платье-жилет"
+    - "Юбка ниже колена"
+    - "Чёрная закрытая обувь на небольшом каблуке"
+
+invariants:
+  - "Сохранять лицо, возраст и пропорции тела."
+  - "Сохранять короткую светлую волнистую причёску."
+  - "Сохранять форму и положение очков."
+  - "Сохранять телосложение и рост."
+  - "Сохранять одежду, цветовую гамму и аксессуары."
+  - "Не смешивать черты с CHAR_GIRL_01 или CHAR_MOTHER_01."
+
+rig:
+  status: NOT_IMPLEMENTED
+  target: articulated_2_5d
+  geometry: NOT_IMPLEMENTED
+  skeleton: NOT_IMPLEMENTED
+  ik: NOT_IMPLEMENTED
+  animation: NOT_IMPLEMENTED
